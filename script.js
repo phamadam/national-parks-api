@@ -27,8 +27,7 @@ function displayResults(responseJson) {
             </div>
             <div class="item">
                 <p>${responseJson.data[i].addresses[0].line1} ${responseJson.data[i].addresses[0].line2} ${responseJson.data[i].addresses[0].line3}</p>
-                <p>${responseJson.data[i].addresses[0].city}, ${responseJson.data[i].addresses[0].stateCode}</p>
-                <p>Postal Code ${responseJson.data[i].addresses[0].postalCode}</p>
+                <p>${responseJson.data[i].addresses[0].city}, ${responseJson.data[i].addresses[0].stateCode} ${responseJson.data[i].addresses[0].postalCode}</p>
             </div>
         </div>`)
         $('.results-list').html(endResult);
